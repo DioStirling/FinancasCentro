@@ -16,6 +16,8 @@ import {
   Menu,
   Bell,
   BookMinus,
+  Calendar,
+  Package,
 } from "lucide-react"
 
 import { Home } from "lucide-react"
@@ -97,8 +99,14 @@ export default function Sidebar() {
                   MENU
                 </div>
                 <div className="space-y-1">
-                  <NavItem href="#" icon={Home}>
+                  <NavItem href="/dashboard" icon={Home}>
                     Painel de Controle
+                  </NavItem>
+                  <NavItem href="/calendario" icon={Calendar}>
+                    Calendário
+                  </NavItem>
+                  <NavItem href="/estoque" icon={Package}>
+                    Estoque
                   </NavItem>
                   <NavItem href="#" icon={BarChart2}>
                     Analises
